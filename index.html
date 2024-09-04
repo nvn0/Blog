@@ -6,7 +6,7 @@
     <title>My Blog</title>
     <link rel="stylesheet" href="styles.css">
 
-    <script src="https://unpkg.com/htmx.org@1.9.4/dist/htmx.min.js"></script>
+    <script src="https://unpkg.com/htmx.org@2.0.2"></script>
 
 
 </head>
@@ -39,14 +39,28 @@
         <p>Content for Category 1...</p>
     </div>
     -->
-    <button hx-get="https://api.github.com/zen" hx-trigger="click" hx-target="#quote">
+    <button id="get-quote">
         Get a Zen Quote
     </button>
 
-    <div id="quote" class="post">
-        <p>Click the button to get a Zen quote from the GitHub API.</p>
-    </div>
-
+    <script>
+        document.getElementById('get-quote').addEventListener('click', function() {
+            // Referência ao botão
+            var button = this;
+            
+            // Fazendo uma solicitação para a API
+            fetch('https://api.github.com/zen')
+                .then(response => response.text())
+                .then(data => {
+                    // Atualiza o texto do botão com o conteúdo da API
+                    button.innerText = data;
+                })
+                .catch(error => {
+                    console.error('Error fetching the Zen quote:', error);
+                    button.innerText = 'Failed to get quote';
+                });
+        });
+    </script>
 
     <article class="post">
         <h2>First Blog Post</h2>

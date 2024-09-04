@@ -111,6 +111,12 @@ button:hover {
     color: #1e1e1e;
 }
 
+.post {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 #quote {
     background-color: #2a2a2a;
     padding: 15px;
