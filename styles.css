@@ -12,6 +12,7 @@ body {
     color: #e0e0e0; /* Light text color */
     line-height: 1.6;
     padding: 20px;
+    margin: 0;
 }
 
 header {
@@ -46,7 +47,7 @@ header h1 {
 }
 
 .post pre {
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color: #2a2a2a;
     color: #e0e0e0;
     padding: 15px;
@@ -54,6 +55,30 @@ header h1 {
     border-left: 5px solid #ffd700;
     overflow-x: auto;
     white-space: pre-wrap;
+}
+pre code {
+    background-color: #2a2a2a; /* Altere essa cor para o fundo desejado */
+   
+}
+
+/* Opcional: Alterar a cor de fundo quando um bloco estiver sendo copiado */
+/* Garantir que o Highlight.js aplique o fundo correto */
+.hljs {
+    background-color: #2a2a2a !important; /* Sobrescreve o tema do Highlight.js */
+    color: #e0e0e0 !important; /* Cor do texto */
+}
+
+/* Opcional: Estilização de componentes individuais do código, se necessário */
+.hljs-keyword {
+    color: #ffd700 !important; /* Palavras-chave em amarelo ouro */
+}
+
+.hljs-string {
+    color: #98c379 !important; /* Strings em verde */
+}
+
+.hljs-comment {
+    color: #7c7c7c !important; /* Comentários em cinza */
 }
 
 footer {
@@ -122,4 +147,83 @@ button:hover {
     padding: 15px;
     border-radius: 5px;
     border-left: 5px solid #ffd700;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o campo de pesquisa e o botão */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1; /* Faz o campo de pesquisa ocupar o espaço restante */
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #ffd700;
+    max-width: 300px; /* Define a largura máxima do campo de pesquisa */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura total */
+}
+
+
+/* Estilos para a lista de tags */
+ul.tags {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+/* Estilos individuais para cada tag */
+ul.tags li {
+    display: inline;
+}
+
+ul.tags li a {
+    /*background-color: #ffd700; /* Cor de fundo das tags */
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+ul.tags li a:hover {
+   /* background-color: #e0b600; /* Cor quando passar o mouse */
+}
+
+
+ul.tags li a[data-tag="python"] {
+    background-color: #ffd700; 
+}
+
+ul.tags li a[data-tag="linux"] {
+    background-color: #33dd8d; 
+}
+
+ul.tags li a[data-tag="windows"] {
+    background-color: #038ff3; 
+}
+
+ul.tags li a[data-tag="nix"] {
+    background-color: #7040f5; 
+}
+
+ul.tags li a[data-tag="terminal"] {
+    background-color: #1a9112; 
+}
+
+ul.tags li a[data-tag="bash"] {
+    background-color: #b2f70f; 
+}
+
+ul.tags li a[data-tag="cyber"] {
+    background-color: #930d40; 
+}
+
+ul.tags li a[data-tag="network"] {
+    background-color: #f4cf85; 
 }

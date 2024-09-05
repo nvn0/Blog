@@ -6,15 +6,15 @@
     <title>Programing</title>
     <link rel="stylesheet" href="styles.css">
 
-    <!--
-      Inclua o CSS do Highlight.js
-     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai-sublime.min.css">
+    
+    <!--Inclua o CSS do Highlight.js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
 
 
-     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-     <script>hljs.highlightAll();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 
-    -->
+    
 </head>
 <body>
     <header>
@@ -47,31 +47,29 @@
     -->
 
     
-
+ <!--
 
     <article class="post">
         <h2>First Blog Post</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque libero in tincidunt euismod. Proin sit amet dictum libero.</p>
         <p><a href="#">Read more...</a></p>
     </article>
-
+-->
     <article class="post">
         <h2>Python clean list content printing</h2>
         <p> Como printar o conteudo de uma lista em python de forma limpa? Tal é possivel usado um "*" junto da lista.</p>
 
-        <pre><code>
-list = ["a", "b", "c"]
+        <pre><code class="python">list = ["a", "b", "c"]
 
 print(list)  # ["a","b","c"]
-
 print(*list)  # a b c
-
-print(*list, sep=" --> ")  # a --> b --> c
-        
-    
-        </code></pre>
+print(*list, sep=" --> ")  # a --> b --> c</code></pre>
 
         <!--<p><a href="#">Read more...</a></p>-->
+
+        <ul class="tags">
+            <li><a data-tag="python">Python</a></li>
+        </ul>
     </article>
 
     <footer>
