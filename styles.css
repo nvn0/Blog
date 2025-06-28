@@ -57,7 +57,7 @@ header h1 {
     white-space: pre-wrap;
 }
 pre code {
-    background-color: #2a2a2a; /* Altere essa cor para o fundo desejado */
+    background-color: #2a2a2a;
    
 }
 
@@ -70,7 +70,7 @@ pre code {
 
 /* Opcional: Estilização de componentes individuais do código, se necessário */
 .hljs-keyword {
-    color: #ffd700 !important; /* Palavras-chave em amarelo ouro */
+    color: #ffd700 !important; /* keywords em dourado */
 }
 
 .hljs-string {
@@ -192,7 +192,7 @@ ul.tags li a {
 }
 
 ul.tags li a:hover {
-   /* background-color: #e0b600; /* Cor quando passar o mouse */
+   /* background-color: #e0b600; /* Cor quando passar o rato*/
 }
 
 
